@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/persons")
+@CrossOrigin(origins = "http://localhost:4200")
 @RequiredArgsConstructor
 public class PersonController {
 

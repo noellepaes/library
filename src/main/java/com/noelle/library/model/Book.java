@@ -1,8 +1,5 @@
 package com.noelle.library.model;
 
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.IdGeneratorType;
-
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -15,8 +12,6 @@ import lombok.*;
 public class Book {
 
     @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "book_id")
     private String id;
 

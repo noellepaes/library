@@ -5,7 +5,6 @@ import lombok.*;
 
 import java.time.LocalDate;
 
-import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Getter
@@ -15,8 +14,6 @@ import org.hibernate.annotations.GenericGenerator;
 public class Loan {
 
     @Id
-    @GeneratedValue(generator = "uuid2")
-    @GenericGenerator(name = "uuid2", strategy = "org.hibernate.id.UUIDGenerator")
     private String id;
 
     @Column(name="borrowedDate", nullable=false)
